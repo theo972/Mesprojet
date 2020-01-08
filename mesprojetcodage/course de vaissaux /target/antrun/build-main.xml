@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy todir="/Users/theovadymoutty/Mesprojet/codingfactory/course de vaissaux /resources/students">
+  <copy todir="/Users/theovadymoutty/Mesprojet/mesprojetcodage/course de vaissaux /resources/students">
     <fileset dir="target">
       <include name="**/Student95*.jar"/>
     </fileset>
