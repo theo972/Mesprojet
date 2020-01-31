@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <input id="number" name="number" placeholder="Votre nombre..."value="">
+        <input type="submit" onclick="test()">
+        <div></div>
+        <input type="reset" onclick="perdu()">
+        <p id ="demo"></p>
+        <div></div>
+    </form>
+    <script>
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        var rslt = getRandomInt(100);
+        console.log(rslt);
+
+        test = () => {
+            var selection = document.getElementById("number").value;
+            if(selection < rslt){
+                console.log('Le nombre est plus grand')
+                document.getElementById("demo").innerHTML = "Le nombre est plus grand";
+            }
+            else if(selection > rslt){
+                console.log('Le nombre est plus petit')
+                document.getElementById("demo").innerHTML = "Le nombre est plus petit";
+            }
+            else if (rslt==selection){
+                console.log('Vous avez gagnez')
+                document.getElementById("demo").innerHTML = "Vous avez gagner";
+                
+            }
+        }
+
+        function perdu(){
+            console.log('PERDU !')
+            document.getElementById("demo").innerHTML = "Perdu !";
+        }
+        innerHTML
+
+
+    </script>
+</body>
+
+</html>

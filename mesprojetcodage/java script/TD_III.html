@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pierre/Papier/Ciseaux</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <input id="name" name="name" placeholder="Votre nom..."value="">
+        <input type="submit" onclick="test()">
+        <div></div>
+        <input  type="button" onclick="pierre()">
+        <input type="button" onclick="feuille()">
+        <input type="button" onclick="papier()">
+
+    </form>
+    <script>
+
+        test = () => {
+            var selection = document.getElementById("name").value;
+            if(selection < rslt){
+                console.log('Le nombre est plus grand')
+                document.getElementById("demo").innerHTML = "Le nombre est plus grand";
+            }
+            else if(selection > rslt){
+                console.log('Le nombre est plus petit')
+                document.getElementById("demo").innerHTML = "Le nombre est plus petit";
+            }
+            else if (rslt==selection){
+                console.log('Vous avez gagnez')
+                document.getElementById("demo").innerHTML = "Vous avez gagner";
+                
+            }
+        }
+    
+    
+    
+    </script>
+    
+</body>
+</html>
